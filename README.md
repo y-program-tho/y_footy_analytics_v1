@@ -9,6 +9,7 @@ v1 is the MVP. There will be v2 and v3 that will build up on the current version
 
 ----------------------------|----------------------------------------------------------------------------------------------------|
 Layer	                    | Technology                                                                                         |
+----------------------------|----------------------------------------------------------------------------------------------------|
 Language	                | Python 3.11 (PySpark)                                                                              |
 Data Source	                | CSV files (fixtures, results, standings)                                                           |
 Processing Engine	        | Apache Spark (PySpark, local mode for dev / standalone or EMR-style cluster for larger runs)       |
