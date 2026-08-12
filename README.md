@@ -7,11 +7,11 @@ The application is designed to provide insights into player statistics, team per
 
 v1 is the MVP. There will be v2 and v3 that will build up on the current version with more features and functionalities.
 
-----------------------------|----------------------------------------------------------------------------------------------------|
+
 Layer	                    | Technology                                                                                         |
 ----------------------------|----------------------------------------------------------------------------------------------------|
 Language	                | Python 3.11 (PySpark)                                                                              |
-Data Source	                | CSV files (fixtures, results, standings)                                                           |
+Data Source	                | CSV files (fixtures, results, standings) using Footballdata-io API                                 |
 Processing Engine	        | Apache Spark (PySpark, local mode for dev / standalone or EMR-style cluster for larger runs)       |
 Data Lake / Object Storage	| Amazon S3                                                                                          |
 Data Warehouse	            | ClickHouse                                                                                         |
@@ -26,4 +26,5 @@ Testing	                    | pytest (for PySpark transform logic, using local S
 Logging	                    | Python logging + Spark's own job logs                                                              |
 Code Quality	            | ruff + black                                                                                       |
 Environment/Packaging	    | venv + requirements.txt; a Spark-compatible base image if containerized                            |
-----------------------------|----------------------------------------------------------------------------------------------------|
+
+
