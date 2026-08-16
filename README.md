@@ -7,7 +7,7 @@ The application is designed to provide insights into player statistics, team per
 
 v1 is the MVP. There will be v2 and v3 that will build up on the current version with more features and functionalities.
 
-
+## Tech Stack
 Layer	                    | Technology                                                                                         |
 ----------------------------|----------------------------------------------------------------------------------------------------|
 Language	                | Python 3.11 (PySpark)                                                                              |
@@ -27,4 +27,12 @@ Logging	                    | Python logging + Spark's own job logs             
 Code Quality	            | ruff + black                                                                                       |
 Environment/Packaging	    | venv + requirements.txt; a Spark-compatible base image if containerized                            |
 
-
+## Data Model
+League Table:
+- position	
+- team	
+- season	
+- record	
+- goals	
+- home	
+- away
